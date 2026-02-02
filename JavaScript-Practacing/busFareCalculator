@@ -1,0 +1,18 @@
+function ticketFare(age, isStudent) {
+  let fare = 800;
+
+  if (age < 10) {
+    fare = 0;
+  } else if (isStudent) {
+    fare = fare * 0.5;
+  } else if (age >= 60) {
+    fare = fare * 0.85;
+  }
+
+  return fare;
+}
+
+console.log(ticketFare(8, false));
+console.log(ticketFare(20, true));
+console.log(ticketFare(65, false));
+console.log(ticketFare(35, false));

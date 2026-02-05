@@ -4,10 +4,10 @@ function checkPassward(password) {
     let hasNum = false;
     let hasSpace = password.includes(" ");
     
-    let length = password.length;
+    // let length = password.length;
     
 
-    for (let i = 0; i < length; i++){
+    for (let i = 0; i < password.length; i++){
         let charechter = password[i];
 
         if (charechter >= "0" && charechter <= "9") {
